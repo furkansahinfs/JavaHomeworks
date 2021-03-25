@@ -2,16 +2,16 @@ package G01_CENG211_HW1;
 
 public class Weather {
 	// We create our variables,constructor and set and get methods.
-	
+
 	private int wind;
 	private double temperature;
 	private double fltemperature;
 	private int humidity;
 	private int precipitation;
 	private String visibility;
-	
-	public Weather(int wind,double temperature,double fltemperature,int humidity,int precipitation,String visibility)
-	{
+
+	public Weather(int wind, double temperature, double fltemperature, int humidity, int precipitation,
+			String visibility) {
 		this.wind = wind;
 		this.fltemperature = fltemperature;
 		this.temperature = temperature;
@@ -20,64 +20,52 @@ public class Weather {
 		this.visibility = visibility;
 	}
 
-	public int getWind()
-	{
+	public int getWind() {
 		return wind;
 	}
 
-	public void setWind(int wind) 
-	{
+	public void setWind(int wind) {
 		this.wind = wind;
 	}
 
-	public double getTemperature() 
-	{
+	public double getTemperature() {
 		return temperature;
 	}
 
-	public void setTemperature(double temperature) 
-	{
+	public void setTemperature(double temperature) {
 		this.temperature = temperature;
 	}
 
-	public double getFltemperature() 
-	{
+	public double getFltemperature() {
 		return fltemperature;
 	}
 
-	public void setFltemperature(double fltemperature) 
-	{
+	public void setFltemperature(double fltemperature) {
 		this.fltemperature = fltemperature;
 	}
 
-	public int getHumidity() 
-	{
+	public int getHumidity() {
 		return humidity;
 	}
 
-	public void setHumidity(int humidity) 
-	{
+	public void setHumidity(int humidity) {
 		this.humidity = humidity;
 	}
 
-	public int getPrecipitation()
-	{
+	public int getPrecipitation() {
 		return precipitation;
 	}
 
-	public void setPrecipitation(int precipitation) 
-	{
+	public void setPrecipitation(int precipitation) {
 		this.precipitation = precipitation;
 	}
 
-	public String getVisibility() 
-	{
+	public String getVisibility() {
 		return visibility;
 	}
 
-	public void setVisibility(String visibility)
-	{
+	public void setVisibility(String visibility) {
 		this.visibility = visibility;
 	}
-	
+
 }

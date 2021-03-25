@@ -1,16 +1,15 @@
 package G01_CENG211_HW1;
 
 public class City {
-	
+
 	// We create our variables,constructor and set and get methods.
-	
+
 	private int plateNo;
 	private String name;
 	private Region region;
 	private int altitude;
-	
-	public City(int plateNo,String name,Region region,int altitude) 
-	{
+
+	public City(int plateNo, String name, Region region, int altitude) {
 		this.plateNo = plateNo;
 		this.name = name;
 		this.region = region;
@@ -44,7 +43,7 @@ public class City {
 	public int getAltitude() {
 		return altitude;
 	}
-	
+
 	public String toString() {
 		return name;
 	}
@@ -52,7 +51,5 @@ public class City {
 	public void setAltitude(int altitude) {
 		this.altitude = altitude;
 	}
-
-	
 
 }
