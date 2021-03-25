@@ -1,9 +1,9 @@
 package Item;
 
-public class Cream implements IUncountable{
-	
-	private double litre; //litre of cream
-	
+public class Cream implements IUncountable {
+
+	private double litre; // litre of cream
+
 	public Cream(double litre) {
 		this.setLitre(litre);
 	}
@@ -15,7 +15,5 @@ public class Cream implements IUncountable{
 	public void setLitre(double litre) {
 		this.litre = litre;
 	}
-	
-	
 
 }

@@ -1,9 +1,9 @@
 package Item;
 
-public class Yeast implements IUncountable{
-	
-	private double litre; //litre of yeast
-	
+public class Yeast implements IUncountable {
+
+	private double litre; // litre of yeast
+
 	public Yeast(double litre) {
 		this.setLitre(litre);
 	}
@@ -15,7 +15,5 @@ public class Yeast implements IUncountable{
 	public void setLitre(double litre) {
 		this.litre = litre;
 	}
-	
-	
 
 }
