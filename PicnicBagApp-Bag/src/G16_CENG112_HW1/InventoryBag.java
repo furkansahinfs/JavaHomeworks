@@ -1,6 +1,3 @@
-// G-16 FURKAN ŞAHİN. HOCAM GRUP ARKADAŞIM ÖDEVİ YAPMAYACAĞINI BELİRTTİ. ÖDEVİ KENDİM YAPTIM VE KENDİM (FURKAN ŞAHİN) ADINA ÖDEVİ TESLİM ETMEK İSTİYORUM. ARKADAŞ İLE BU DURUMU KONUŞTUM. PUANLARKEN SADECE FURKAN ŞAHİN ADINA PUANLARSANIZ SEVİNİRİM.
-
-
 
 package G16_CENG112_HW1;
 
@@ -8,6 +5,7 @@ public class InventoryBag<T> implements IBag<T> {
 
 	
 	// I create my variables.
+	@SuppressWarnings("unchecked")
 	private T[] bag = (T[]) new Object[500];
 	public String[] display_bag = new String[500];
 	private int numberOfEntries;
@@ -77,7 +75,7 @@ public class InventoryBag<T> implements IBag<T> {
 			result = bag[index-1];
 			bag[index-1] = bag[numberOfEntries-1];
 			bag[numberOfEntries-1] = null;
-			numberOfEntries --;	
+			numberOfEntries=numberOfEntries-1;	
 			System.out.println("Item is removed from inventoryBag");
 		}
 		return result;		
@@ -90,6 +88,7 @@ public class InventoryBag<T> implements IBag<T> {
 		//If bag is not empty I delete the item which is at the end of the list and it returns that Item.
 		//Else it returns null.
 		T result = removeByIndex(numberOfEntries - 1);
+		System.out.println("Last item is removed." );
 		return result;
 	}
 
@@ -98,17 +97,18 @@ public class InventoryBag<T> implements IBag<T> {
 	public T remove(T item) 
 	{		
 		// If selected item is in the bag I delete the item and it returns that Item.
-		// I transfer the item which is at the end of the bag to the index of deleted item. Item which is on last index is equaled to null and numberOfEntries is decreased. 
+		// I transfer the item which is at the end of the bag to the index of deleted item. Item which is on last index is equal to null and numberOfEntries is decreased. 
 		// Else it returns null.
 		for(int i=0;i<numberOfEntries;i++)
 		{
 			
 			if(item.equals(bag[i])) 
 			{
+				T temp = bag[numberOfEntries-1];
 				System.out.println("Item is removed from inventoryBag");
-				bag[i]=	bag[numberOfEntries-1];
+				bag[i]= temp;
 				bag[numberOfEntries-1] = null;
-				numberOfEntries--;
+				numberOfEntries=numberOfEntries-1;
 				break;
 			}
 		}
@@ -150,17 +150,17 @@ public class InventoryBag<T> implements IBag<T> {
 	@Override
 	public boolean contains(T item) {
 		// If the selected item is in the bag I return true. Else it returns false.
-		boolean containis = false;
+		boolean contains = false;
 		for(int i=0;i<numberOfEntries;i++) 
 		{
 			if(item.equals(bag[i])) 
 			{
-				containis = true;
+				contains = true;
 				break;
 			}
 		}
 		
-		return containis;
+		return contains;
 	}
 	
 	

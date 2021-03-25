@@ -21,7 +21,7 @@ public class FileIO {
 		// I try to read the file and its rows one by one.
 		try {
 
-			 dosyaOkuyucu = new FileReader("C:\\Users\\Furkan\\Desktop\\Media.txt");
+			 dosyaOkuyucu = new FileReader("CENG112_HW4_Media.txt");
 			 okuyucu = new BufferedReader(dosyaOkuyucu);			 
 					
 			 String satir = okuyucu.readLine();

@@ -1,4 +1,3 @@
-// G-16 FURKAN ŞAHİN. HOCAM GRUP ARKADAŞIM ÖDEVİ YAPMAYACAĞINI BELİRTTİ. ÖDEVİ KENDİM YAPTIM VE KENDİM (FURKAN ŞAHİN) ADINA ÖDEVİ TESLİM ETMEK İSTİYORUM. ARKADAŞ İLE BU DURUMU KONUŞTUM. PUANLARKEN SADECE FURKAN ŞAHİN ADINA PUANLARSANIZ SEVİNİRİM.
 
 package G16_CENG112_HW1;
 
@@ -6,6 +5,7 @@ public class PaperTrashBag<T> implements IBag<T> {
 
 	// I create my variables.
 	private int DEFAULT_CAPACITY=0;
+	@SuppressWarnings("unchecked")
 	private T[] papertrashbag = (T[]) new Object[DEFAULT_CAPACITY];
 	private int numberOfEntries;
 	

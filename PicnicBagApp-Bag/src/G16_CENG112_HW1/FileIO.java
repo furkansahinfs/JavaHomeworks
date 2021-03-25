@@ -1,6 +1,3 @@
-// G-16 FURKAN ŞAHİN. HOCAM GRUP ARKADAŞIM ÖDEVİ YAPMAYACAĞINI BELİRTTİ. ÖDEVİ KENDİM YAPTIM VE KENDİM (FURKAN ŞAHİN) ADINA ÖDEVİ TESLİM ETMEK İSTİYORUM. ARKADAŞ İLE BU DURUMU KONUŞTUM. PUANLARKEN SADECE FURKAN ŞAHİN ADINA PUANLARSANIZ SEVİNİRİM.
-
-
 
 package G16_CENG112_HW1;
 
@@ -14,7 +11,7 @@ public class FileIO {
 	
 	public IBag<Item> readInventory(){
 		// I create a bag to add the items from Inventory.txt to bag.
-		InventoryBag<Item> filebag = new InventoryBag();
+		InventoryBag<Item> filebag = new InventoryBag<Item>();
 		
 		// I define my variables.
 		FileReader dosyaOkuyucu;
@@ -26,7 +23,7 @@ public class FileIO {
 			//I create an Item and I label the name and type which is taken from the split line.
 			// I add the Item to bag according to its quantity.
 			
-			 dosyaOkuyucu = new FileReader("C:\\Users\\Furkan\\Desktop\\Inventory.txt");
+			 dosyaOkuyucu = new FileReader("Inventory.txt");
 			 okuyucu = new BufferedReader(dosyaOkuyucu);			 
 			 String satir = okuyucu.readLine();			
 			 
